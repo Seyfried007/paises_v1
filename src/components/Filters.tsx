@@ -48,30 +48,32 @@ export function Filters({
 
   return (
     <div className="bg-gray-800 dark:bg-gray-900 p-4 rounded-lg mb-6 space-y-4 animate-fade-in">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <FancySearchInput
-          value={search}
-          onChange={setSearch}
-          placeholder="Buscar países..."
-        />
-        <FancySelect
-          value={region}
-          onChange={setRegion}
-          options={regions}
-          placeholder="Todas las regiones"
-        />
-        <FancyInput
-          type="number"
-          value={minPopulation}
-          onChange={setMinPopulation}
-          placeholder="Población mínima"
-        />
-        <FancyInput
-          type="number"
-          value={maxPopulation}
-          onChange={setMaxPopulation}
-          placeholder="Población máxima"
-        />
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 justify-items-center">
+          <FancySearchInput
+            value={search}
+            onChange={setSearch}
+            placeholder="Buscar países..."
+          />
+          <FancySelect
+            value={region}
+            onChange={setRegion}
+            options={regions}
+            placeholder="Todas las regiones"
+          />
+          <FancyInput
+            type="number"
+            value={minPopulation}
+            onChange={setMinPopulation}
+            placeholder="Población mínima"
+          />
+          <FancyInput
+            type="number"
+            value={maxPopulation}
+            onChange={setMaxPopulation}
+            placeholder="Población máxima"
+          />
+        </div>
       </div>
       <div className="flex justify-center gap-4">
         <FancyToggleButton

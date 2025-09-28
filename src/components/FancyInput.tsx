@@ -98,7 +98,7 @@ const StyledWrapper = styled.div`
 
   #input-mask {
     pointer-events: none;
-    width: 100px;
+    width: 300px;
     height: 20px;
     position: absolute;
     background: linear-gradient(90deg, transparent, black);
